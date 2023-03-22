@@ -1,0 +1,222 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;    
+    width: 100vw;
+    max-height: 100vh;
+}
+
+.log,.register{
+    width: 100%;
+    height: 92.5vh;
+    background-image: url(./images/bg2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-clip: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container ,.reg-container{
+    width: 35%;
+    height: 70vh;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rgb(59, 15, 15); */
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 3px 3px 8px 10px white;
+}
+
+.heading{
+    width: 90%;
+    margin-top: 0;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    border-bottom: 3px solid rgb(59, 15, 15);
+}
+
+.heading h2{
+    color: burlywood;
+    /* text-shadow: 2px 2px 5px rgb(59, 15, 15); */
+    text-align: center;
+    font-family: 'Great Vibes', cursive;
+    font-weight: bolder;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+}
+
+.login, .reg{
+    width: 90%;
+}
+
+.login form,
+.reg form{
+    width: 100%;
+    padding: 20px 30px 0 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.login form p,
+.reg form p{
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+}
+
+.login form i{
+    margin-right: 15px;
+}
+
+.login form input,
+.reg form input{
+    margin-bottom: 20px;
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid rgb(59, 15, 15);
+    background-color: rgb(255, 231, 198);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#login{
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(59, 15, 15);
+    color: white;
+    font-size: 1.2rem;
+    transition: all .3s ease;
+    margin-bottom: 35px;
+}
+
+#login:hover{
+    background-color: rgb(241, 172, 80);
+    color: white;
+    box-shadow: 2px 2px 5px black;
+}
+
+@media (max-width: 1300px){
+    .login-container{
+        width: 55%;
+    }
+}
+
+@media (max-width: 900px){
+    .login-container{
+        width: 70%;
+    }
+}
+
+@media (max-width: 700px){
+    .log{
+        background-image: none;
+    }
+
+    .login-container .heading{
+        font-size: 2rem;
+        padding-bottom: 15px;
+        padding-top: 20px;
+    }
+    .login-container{
+        width: 90%;
+    }
+    #login{
+        margin-bottom: 20px;
+    }
+    
+}
+
+
+/*-----------------Register  Form---------------------- */
+
+.reg-container{
+    width: 50%;
+}
+.reg-container .heading{
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.reg-container .reg form{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.reg-container .reg form div{
+    flex-basis: 45%;
+}
+
+.reg-container .reg form div input{
+    width: 100%;
+}
+.reg form input{
+    margin-bottom: 10px;
+}
+
+.reg #login{
+    width: 70%;
+    margin: 20px auto;
+}
+
+.reg .error{
+    flex-basis: 100%;
+    text-align: center;
+    color: red;
+}
+
+@media (max-width: 1300px){
+    .reg-container{
+        width: 70%;
+    }
+}
+
+@media (max-width: 900px){
+    .reg-container{
+        width: 80%;
+    }    
+}
+
+@media (max-width: 700px){  
+    .register{
+        margin-top: 60px;
+        background-image: none;
+    }  
+    .reg-container{
+        width: 90%;
+    }
+    .reg-container .reg form div{
+        flex-basis: 100%;
+        width: 100%;
+    }
+
+    .reg #login{
+        width: 100%;
+        margin: 10px auto;
+    }     
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

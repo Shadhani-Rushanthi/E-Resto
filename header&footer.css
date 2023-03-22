@@ -1,0 +1,198 @@
+
+/* header section*/
+header{
+    margin: 0;
+    /* width: 100vw; */
+    padding: 0;
+}
+
+/* nav-bar sub-section */
+.social-icons{
+    background-color: white;
+}
+.social-icons i{
+    cursor: pointer;
+}
+
+.navbar{
+    background-color: burlywood;
+    color: white;
+    /* position: relative; */
+    width: 100%;
+}
+
+.logo{
+    letter-spacing: 3px;
+    font-weight: bolder;
+}
+
+.logo h5{
+    color: transparent;
+}
+
+.logo h5 .l1{
+    animation-name: logoload;
+    animation-duration: 4s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+}
+
+.logo h5 .l2{
+    animation-name: logoload;
+    animation-duration: 4s;
+    animation-delay: .2s;
+    animation-iteration-count: infinite;
+}
+
+.logo h5 .l3{
+    animation-name: logoload;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-delay: .4s;
+}
+
+.logo h5 .l4{
+    animation-name: logoload;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-delay: .6s;
+}
+
+.logo h5 .l5{
+    animation-name: logoload;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-delay: .8s;
+}
+
+.logo h5 .l6{
+    animation-name: logoload;
+    animation-duration: 4s;
+    animation-delay: .10s;
+    animation-iteration-count: infinite;
+}
+
+.logo h5 .l7{
+    animation-name: logoload;
+    animation-duration: 4s;
+    animation-delay: .12s;
+    animation-iteration-count: infinite;
+}
+
+.logo h5 .l8{
+    animation-name: logoload;
+    animation-duration: 4s;
+    animation-delay: .14s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes logoload {
+    0%{
+        color: white;
+        opacity: 0;
+    }
+    50%{
+        color: white;
+        opacity: .5;
+    }
+    90%{
+        color: white;
+        opacity: 1;
+    }
+    100%{
+        color: white;
+        opacity: 1;
+    }
+}
+
+.navbar .link{
+    cursor: pointer;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: all .2s ease;
+    /* position: relative; */
+}
+
+.navbar .link:hover a{
+    opacity: 1;
+}
+
+.navbar .link h6 a{
+    text-decoration: none;
+    color: white;
+   opacity: .7;
+}
+.navbar .link .link-line{
+    width: 100%;
+    transition: all .2s ease;
+    height: 2px;
+    background-color: white;
+    visibility: hidden;
+}
+
+.navbar .link:hover .link-line{
+    visibility: visible;
+}
+
+.extra{
+    transition: all .5s ease;
+}
+.extra i:hover{
+    cursor: pointer;
+    color: black;
+}
+
+@media (max-width: 800px){
+    .navbar{
+        flex-direction: column; 
+        justify-content: center;   
+        width: 100vW;    
+    }
+
+    .nav-links{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .nav-links .link{
+        width: 100%;
+        margin: 0px;
+        text-align: center;
+        transition: all .3s ease;
+    }
+    
+    .nav-links .link:hover{
+        width: 100%;
+        background-color: rgb(207, 154, 84);
+    }
+
+    .nav-links .link:hover .link-line{
+        visibility: hidden;
+    }
+
+    .nav-links .link:active{
+        width: 100%;
+        background-color: rgb(207, 154, 84);
+        text-align: center;
+    }
+}
+/* nav-bar sub-section */
+/* end header section */
+
+
+/* footer section */
+footer{
+    background-color: burlywood;
+}
+
+footer .container{
+    background-color: burlywood;
+}
+
+footer .text-center{
+    background-color: rgb(207, 154, 84);
+}
+
+
+
+/* End footer section */

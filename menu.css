@@ -1,0 +1,248 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+
+header .header-content{
+    width: 100%;
+    height: 50vh;
+    background-image: url(./images/menu.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.header-content .content{
+    width: 50%;
+    position: relative;
+    top: 50%;
+    left: 30%;
+    transform: translate(-30%,-50%);
+    /* margin-left: 15%; */
+}
+
+.header-content .content .heading{
+    font-size: 4rem;
+    letter-spacing: 4px;
+    font-family: 'Great Vibes', cursive;
+    color: wheat;
+}
+
+
+/* menu section */
+
+.menu-content{
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+    /* border: 1px solid black; */
+}
+
+.menu-content .category{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-content .category .form{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-content .category .form .type{
+    flex-basis: 25%;
+}
+
+.menu-content .category .form .type form{
+    width: 100%;
+}
+
+.menu-content .category .form .type form input{
+    width: 100%;
+    padding: 10px 20px;
+    background-color: rgb(252, 156, 32);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border: none;
+    color: white;
+    box-shadow: 1px 1px 2px 2px rgb(66, 66, 66);
+}
+
+.menu-content .category .form .type form input:hover{
+    box-shadow: 3px 3px 5px rgb(66, 66, 66);
+}
+
+.menu-content .category .form .type form input:active{
+    background-color: brown;
+}
+
+.menu-content .category .search{
+    flex-basis: 30%;
+    position: relative;
+}
+
+.menu-content .category .search #search{
+    padding: 10px 20px;
+    width: 100%;
+    background-color: wheat;
+    border: none;
+    color: white;
+    border-radius: 10px;
+}
+
+.menu-content .category .search #btn-search{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 15px;
+    margin-top: 4px;
+    width:30px; 
+    height:30px;
+    border: none;
+    background-image: url(./images/search.png);
+    background-position: center; 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: transparent;
+}
+
+.menu-content .food-items{
+    width: 100%;
+    margin: 30px auto;
+    display: flex;
+    /* margin-top: 30px; */
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-content .food-items .food{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 15px;
+    box-shadow: 1px 1px 10px rgb(65, 44, 0);
+}
+
+.menu-content .food-items .food .food-img{
+    height: 200px;
+    width: 100%;
+}
+
+.menu-content .food-items .food .food-img form{
+    width: 100%;
+    height: 100%;
+}
+
+.menu-content .food-items .food .food-img form input{
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all .3s ease;
+}
+
+.menu-content .food-items .food .food-img form input:hover{
+    transform: scale(1.5,1.5);
+    border-radius: 50px;
+}
+
+.menu-content .food-items .food .description{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-content .food-items .food .description .name{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+
+@media (max-width: 1000px){
+    .menu-content{
+        width: 90%;
+    }
+    .menu-content .category{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .menu-content .category .form{
+        flex-wrap: wrap;
+        width: 100%;
+        flex-direction: row;
+    }
+
+    .menu-content .category .search{
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    .menu-content .category .search #btn-search{
+        /* padding: 20px; */
+    }
+
+
+    .menu-content .category .form .type form{
+        width: 100%;
+    }
+    .menu-content .category .form .type form input{
+        border-radius: none;
+        width: 100%;
+    }
+
+    .menu-content .food-items .food{
+        width: 40%;
+    }
+
+    
+}
+
+
+@media (max-width: 1000px){
+    .menu-content{
+        width: 95%;
+    }    
+        
+    .menu-content .category .form .type{
+        flex-basis: 50%;
+    }
+
+    .menu-content .category .form .type form input{
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+   
+    .menu-content .food-items .food{
+        width: 80%;
+    }
+
+}
+
+
+
+
+/*End menu section */
